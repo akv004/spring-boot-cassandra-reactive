@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  cassandra-service:
+    image: cassandra
+    volumes:
+      - ../cassandra/data:/var/lib/cassandra/data
+    ports:
+      - "9042:9042"
+
+# docker exec -it some-cassandra bash
+# docker logs some-cassandra
+
+# services:
+#   frontend:
+#     build: frontend   
+#     ports:
+#     - 8080:80
+#     depends_on:
+#     - backend
+#   backend:
+#     build: backend

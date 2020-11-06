@@ -15,7 +15,7 @@ export default function App() {
   const getUSer = () => {
     
     axios
-      .get("https://amitverma.mywire.org:8443/users")
+      .get("https://hostname:8443/users")
       .then(response => {
         console.log(response.data);
         setUsers(response.data);

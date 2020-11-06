@@ -1,4 +1,4 @@
-# Getting Started
+# Spring boot cassandra reactive service.
 
 ### Reference Documentation
 For further reference, please consider the following sections:

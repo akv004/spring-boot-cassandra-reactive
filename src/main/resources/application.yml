@@ -1,0 +1,15 @@
+server:
+   port: 8443
+   ssl:
+      key-store: keystore.p12
+      key-store-password: password
+      keyStoreType: PKCS12
+      keyAlias: tomcat
+      
+spring:
+  data:
+    cassandra:
+      keyspaceName: pharmacy
+#      contactPoints: localhost
+      port: 9042
+#logging.level.org.springframework.data.cassandra.core.cql.CqlTemplate=DEBUG
